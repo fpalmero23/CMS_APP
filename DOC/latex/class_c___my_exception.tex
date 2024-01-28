@@ -1,0 +1,79 @@
+\doxysection{C\+\_\+\+My\+Exception Class Reference}
+\hypertarget{class_c___my_exception}{}\label{class_c___my_exception}\index{C\_MyException@{C\_MyException}}
+
+
+Inheritance diagram for C\+\_\+\+My\+Exception\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=179pt]{class_c___my_exception__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C\+\_\+\+My\+Exception\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=179pt]{class_c___my_exception__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_c___my_exception_a91063df542190a8bef2808a341b5e894}\label{class_c___my_exception_a91063df542190a8bef2808a341b5e894} 
+enum class \mbox{\hyperlink{class_c___my_exception_a91063df542190a8bef2808a341b5e894}{Type}} \{ \newline
+{\bfseries Error\+Open\+Data\+Base\+File} = 0x01
+, {\bfseries Error\+Invalid\+Data\+Base\+Name} = 0x02
+, {\bfseries Error\+Parse\+Configuration\+File} = 0x03
+, {\bfseries Error\+Invalid\+Client\+Name} = 0x04
+, \newline
+{\bfseries Error\+Invalid\+Client\+Account\+Number} = 0x05
+, {\bfseries Error\+Client\+Name\+Already\+Exists} = 0x06
+, {\bfseries Error\+Client\+Account\+Already\+Exists} = 0x07
+, {\bfseries Error\+Client\+Name\+Not\+Found} = 0x08
+ \}
+\begin{DoxyCompactList}\small\item\em Types of errors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_c___my_exception_a28d47eac5cb7773c05c136ee2ff19f26}\label{class_c___my_exception_a28d47eac5cb7773c05c136ee2ff19f26} 
+{\bfseries C\+\_\+\+My\+Exception} (\mbox{\hyperlink{class_c___my_exception_a91063df542190a8bef2808a341b5e894}{Type}} type, std\+::string details, int level)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\Hypertarget{class_c___my_exception_af0b1ccdfd9640f1da4a1b487cb797929}\label{class_c___my_exception_af0b1ccdfd9640f1da4a1b487cb797929} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+C\+\_\+\+My\+Exception} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\Hypertarget{class_c___my_exception_a648db218063c92ae9f05d2445eb21254}\label{class_c___my_exception_a648db218063c92ae9f05d2445eb21254} 
+std\+::string {\bfseries what} ()
+\begin{DoxyCompactList}\small\item\em Function to print the custom exceptions. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c___my_exception_ac375a65887ac88e1bb15e3ff4a6db734}{get\+\_\+level}} ()
+\begin{DoxyCompactList}\small\item\em Level of the exception. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_c___my_exception_ac375a65887ac88e1bb15e3ff4a6db734}\label{class_c___my_exception_ac375a65887ac88e1bb15e3ff4a6db734} 
+\index{C\_MyException@{C\_MyException}!get\_level@{get\_level}}
+\index{get\_level@{get\_level}!C\_MyException@{C\_MyException}}
+\doxysubsubsection{\texorpdfstring{get\_level()}{get\_level()}}
+{\footnotesize\ttfamily int C\+\_\+\+My\+Exception\+::get\+\_\+level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Level of the exception. 
+
+\begin{DoxyReturn}{Returns}
+Level 0\+: User level. Level 1\+: Debug Level 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c___my_exception_ac375a65887ac88e1bb15e3ff4a6db734_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_exceptions_8h}{Exceptions.\+h}}\item 
+\mbox{\hyperlink{_exceptions_8cpp}{Exceptions.\+cpp}}\end{DoxyCompactItemize}

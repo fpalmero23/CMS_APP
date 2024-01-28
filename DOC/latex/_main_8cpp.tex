@@ -1,0 +1,134 @@
+\doxysection{Main.\+cpp File Reference}
+\hypertarget{_main_8cpp}{}\label{_main_8cpp}\index{Main.cpp@{Main.cpp}}
+
+
+Main file containing the functions that can be used by the administrator or the user.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \"{}API\+\_\+\+DB.\+h\"{}}\newline
+{\ttfamily \#include \"{}Bank.\+h\"{}}\newline
+Include dependency graph for Main.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_s___user_login_data}{S\+\_\+\+User\+Login\+Data}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{_main_8cpp_a3d1ab0a670bc216d4156cb50052b3e1d}\label{_main_8cpp_a3d1ab0a670bc216d4156cb50052b3e1d} 
+typedef void(\texorpdfstring{$\ast$}{*} {\bfseries Func\+Ptr}) ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{_main_8cpp_a88640396c3f3f24941a477d6ce63aeed}\label{_main_8cpp_a88640396c3f3f24941a477d6ce63aeed} 
+void {\bfseries Setup\+App} ()
+\item 
+\Hypertarget{_main_8cpp_af5ae1c0973a2fe205b8d58b0d5a94c9e}\label{_main_8cpp_af5ae1c0973a2fe205b8d58b0d5a94c9e} 
+void {\bfseries Enter\+User} ()
+\item 
+\Hypertarget{_main_8cpp_a00c9a576c7299b5146d907ab03ea9b39}\label{_main_8cpp_a00c9a576c7299b5146d907ab03ea9b39} 
+void {\bfseries Show\+Main\+Menu\+User} ()
+\item 
+\Hypertarget{_main_8cpp_a4ebd2522f45f7a7326647d27cdec258c}\label{_main_8cpp_a4ebd2522f45f7a7326647d27cdec258c} 
+void {\bfseries Show\+Main\+Menu\+Admin} ()
+\item 
+\Hypertarget{_main_8cpp_a19897830e317bf12c6fd5562f22975d6}\label{_main_8cpp_a19897830e317bf12c6fd5562f22975d6} 
+void {\bfseries Exit\+Configuration} ()
+\item 
+\Hypertarget{_main_8cpp_a2834efeba0664fbe92acf457b27a5f84}\label{_main_8cpp_a2834efeba0664fbe92acf457b27a5f84} 
+void {\bfseries Admin\+Function\+\_\+\+Query\+Data\+All\+Clients} ()
+\item 
+\Hypertarget{_main_8cpp_a0337bc169f42bc11b4e0f294e9a4a912}\label{_main_8cpp_a0337bc169f42bc11b4e0f294e9a4a912} 
+void {\bfseries Admin\+Function\+\_\+\+Query\+Client\+Data} ()
+\item 
+\Hypertarget{_main_8cpp_ae193ecbdf39d28c6d834ceb76c491ba3}\label{_main_8cpp_ae193ecbdf39d28c6d834ceb76c491ba3} 
+void {\bfseries Admin\+Function\+\_\+\+Rename\+Data\+Base\+File} ()
+\item 
+\Hypertarget{_main_8cpp_a5e55932502573de290201f80c443da7e}\label{_main_8cpp_a5e55932502573de290201f80c443da7e} 
+void {\bfseries Admin\+Function\+\_\+\+Query\+Size\+Data\+Base} ()
+\item 
+\Hypertarget{_main_8cpp_a69656bae59754c1f7d98ea0b0b03c279}\label{_main_8cpp_a69656bae59754c1f7d98ea0b0b03c279} 
+void {\bfseries Admin\+Function\+\_\+\+Add\+Client} ()
+\item 
+\Hypertarget{_main_8cpp_ae10e411731452240116bdecfb3726152}\label{_main_8cpp_ae10e411731452240116bdecfb3726152} 
+void {\bfseries User\+Function\+\_\+\+Cash\+Out} ()
+\item 
+\Hypertarget{_main_8cpp_a18202092f3bb32bd0c655b21db94fa65}\label{_main_8cpp_a18202092f3bb32bd0c655b21db94fa65} 
+void {\bfseries User\+Function\+\_\+\+Deposit\+Money} ()
+\item 
+\Hypertarget{_main_8cpp_abe7a6d36d6b611a90ff70e58c7b9a8f5}\label{_main_8cpp_abe7a6d36d6b611a90ff70e58c7b9a8f5} 
+void {\bfseries User\+Function\+\_\+\+Check\+Balance} ()
+\item 
+\Hypertarget{_main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{_main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int {\bfseries main} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{_main_8cpp_ac4ecfebb7cf6b162825ed4ee5770cade}\label{_main_8cpp_ac4ecfebb7cf6b162825ed4ee5770cade} 
+struct \mbox{\hyperlink{struct_s___user_login_data}{S\+\_\+\+User\+Login\+Data}} {\bfseries Client\+Login\+Data}
+\item 
+std\+::map$<$ std\+::string, Func\+Ptr $>$ \mbox{\hyperlink{_main_8cpp_a36a386c5d6d24356448abe86c4378506}{Admin\+Functions\+Map}}
+\item 
+std\+::map$<$ std\+::string, Func\+Ptr $>$ \mbox{\hyperlink{_main_8cpp_ae1bf5a1838c4195b845fbb748f7dffa4}{User\+Functions\+Map}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Main file containing the functions that can be used by the administrator or the user. 
+
+\begin{DoxyAuthor}{Author}
+Fernando Palmero 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024-\/01-\/24 
+\end{DoxyDate}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_main_8cpp_a36a386c5d6d24356448abe86c4378506}\label{_main_8cpp_a36a386c5d6d24356448abe86c4378506} 
+\index{Main.cpp@{Main.cpp}!AdminFunctionsMap@{AdminFunctionsMap}}
+\index{AdminFunctionsMap@{AdminFunctionsMap}!Main.cpp@{Main.cpp}}
+\doxysubsubsection{\texorpdfstring{AdminFunctionsMap}{AdminFunctionsMap}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, Func\+Ptr$>$ Admin\+Functions\+Map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ }
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ \{\textcolor{stringliteral}{"{}1.\ Query\ data\ of\ all\ customers"{}},\ AdminFunction\_QueryDataAllClients\},}
+\DoxyCodeLine{\ \ \ \ \{\textcolor{stringliteral}{"{}2.\ Query\ client\ data"{}},\ AdminFunction\_QueryClientData\},}
+\DoxyCodeLine{\ \ \ \ \{\textcolor{stringliteral}{"{}3.\ Rename\ Data\ Base\ file"{}},\ AdminFunction\_RenameDataBaseFile\},}
+\DoxyCodeLine{\ \ \ \ \{\textcolor{stringliteral}{"{}4.\ Query\ Size\ of\ Data\ Base\ file"{}},\ AdminFunction\_QuerySizeDataBase\},}
+\DoxyCodeLine{\ \ \ \ \{\textcolor{stringliteral}{"{}5.\ Add\ a\ Client"{}},\ AdminFunction\_AddClient\}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{_main_8cpp_ae1bf5a1838c4195b845fbb748f7dffa4}\label{_main_8cpp_ae1bf5a1838c4195b845fbb748f7dffa4} 
+\index{Main.cpp@{Main.cpp}!UserFunctionsMap@{UserFunctionsMap}}
+\index{UserFunctionsMap@{UserFunctionsMap}!Main.cpp@{Main.cpp}}
+\doxysubsubsection{\texorpdfstring{UserFunctionsMap}{UserFunctionsMap}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, Func\+Ptr$>$ User\+Functions\+Map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ }
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ \{\textcolor{stringliteral}{"{}1.\ Cash\ out"{}},\ UserFunction\_CashOut\},}
+\DoxyCodeLine{\ \ \ \ \{\textcolor{stringliteral}{"{}2.\ Deposit\ Money"{}},\ UserFunction\_DepositMoney\},}
+\DoxyCodeLine{\ \ \ \ \{\textcolor{stringliteral}{"{}3.\ Check\ Balance"{}},\ UserFunction\_CheckBalance\},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

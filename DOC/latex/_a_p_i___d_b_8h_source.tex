@@ -1,0 +1,36 @@
+\doxysection{API\+\_\+\+DB.\+h}
+\hypertarget{_a_p_i___d_b_8h_source}{}\label{_a_p_i___d_b_8h_source}\index{API\_DB.h@{API\_DB.h}}
+\mbox{\hyperlink{_a_p_i___d_b_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <nlohmann/json.hpp>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <filesystem>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_exceptions_8h}{Exceptions.h}}"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_bank_8h}{Bank.h}}"{}}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{using\ }json\ =\ nlohmann::json;}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c___a_p_i___d_b}{C\_API\_DB}}}
+\DoxyCodeLine{00020\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c___a_p_i___d_b_ae0558b4391da1f3b4073fa862b82848a}{C\_API\_DB}}();}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c___a_p_i___d_b_a096252b5e644c99c86cdbf85251ba096}{\string~C\_API\_DB}}();}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \mbox{\hyperlink{class_c___a_p_i___d_b_ace9442fc083ae43bad305f39157bba42}{GetNameDataBaseFile}}();}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c___a_p_i___d_b_a4f81eff8436239b5376e7273cb5f23ce}{SetNameDataBaseFile}}(std::string\ Name);}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ std::shared\_ptr<C\_API\_DB>\ \mbox{\hyperlink{class_c___a_p_i___d_b_af406def4af7c8c0900c682319f169636}{getConfigurationObject}}();}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ std::filesystem::path\ \mbox{\hyperlink{class_c___a_p_i___d_b_a635878be6e28dd32989f2bbb35ff5fe8}{RequestPathFileDataBase}}();}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ std::uintmax\_t\ \mbox{\hyperlink{class_c___a_p_i___d_b_aaa1c30fdfc300c83f90fd492bc80a6a2}{RequestFileSize}}();}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c___a_p_i___d_b_a83b590b9b90a654c8066c61e9840032d}{ReadDataBase}}();}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c___a_p_i___d_b_a4192dccced1d7b639beb7d801067c502}{WriteDataBase}}();}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c___a_p_i___d_b_ab471f539f020f2794acb6898502b6c97}{ReadConfigurationFile}}();}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c___a_p_i___d_b_a4cb3cafe3daa1e625e8bb9aa858a3d70}{WriteConfigurationFile}}();}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ std::string\ NameDataBaseFile;}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ std::string\ NameConfigurationfile;}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ std::shared\_ptr<C\_API\_DB>\ API\_DB\_Instance;}
+\DoxyCodeLine{00071\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,24 @@
+{
+    "Clients": [
+        {
+            "AccountNumber": "123456789",
+            "Balance": 275.4,
+            "Name": "Fernando Palmero"
+        },
+        {
+            "AccountNumber": "987654321",
+            "Balance": 1200.45,
+            "Name": "Maria Garcia"
+        },
+        {
+            "AccountNumber": "123456798",
+            "Balance": 200.0,
+            "Name": "Cristina"
+        },
+        {
+            "AccountNumber": "123543567",
+            "Balance": 500.0,
+            "Name": "Jose"
+        }
+    ]
+}

@@ -1,0 +1,196 @@
+\doxysection{C\+\_\+\+Bank Class Reference}
+\hypertarget{class_c___bank}{}\label{class_c___bank}\index{C\_Bank@{C\_Bank}}
+
+
+Collaboration diagram for C\+\_\+\+Bank\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{class_c___bank__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_c___bank_a6ccb08a39eae6f75d40f27709a620a4c}\label{class_c___bank_a6ccb08a39eae6f75d40f27709a620a4c} 
+{\bfseries C\+\_\+\+Bank} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\Hypertarget{class_c___bank_a93b6ef2a62f59b56f6c4ab22c1e9cde4}\label{class_c___bank_a93b6ef2a62f59b56f6c4ab22c1e9cde4} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+C\+\_\+\+Bank} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\Hypertarget{class_c___bank_a2265eae122d1a771f9771868417ab1b2}\label{class_c___bank_a2265eae122d1a771f9771868417ab1b2} 
+std\+::unordered\+\_\+map$<$ std\+::string, std\+::tuple$<$ \mbox{\hyperlink{class_c___client}{C\+\_\+\+Client}}, \mbox{\hyperlink{class_c___account}{C\+\_\+\+Account}} $>$ $>$ {\bfseries Get\+Account\+\_\+umap} ()
+\begin{DoxyCompactList}\small\item\em Function to get map which contains de data client. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c___bank_adaf2f15a807de414b6b5b336b24f2d9c}{Add\+Client}} (std\+::string Name, std\+::string Account\+Number, double Balance)
+\begin{DoxyCompactList}\small\item\em Function to add client to the system. \end{DoxyCompactList}\item 
+\Hypertarget{class_c___bank_ac083503079353d3c61a3f7e6cf965b8e}\label{class_c___bank_ac083503079353d3c61a3f7e6cf965b8e} 
+void {\bfseries Show\+All\+Clients\+Data} ()
+\begin{DoxyCompactList}\small\item\em Show all the data of every client saved in the system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c___bank_a38ae2e527048142d19fe46ee2839c162}{Show\+Data\+One\+Client\+Data\+By\+Name}} (std\+::string Name)
+\begin{DoxyCompactList}\small\item\em Show all the data of one client of the system. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c___bank_a6c85c177d3bf02d600c7202f01f83285}{Request\+Balance\+By\+Client\+Name}} (std\+::string Name)
+\begin{DoxyCompactList}\small\item\em Get the balance of one client. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c___bank_a784802f10d2bd4b2beae8c8c4ad5e686}{Deposit\+Money}} (std\+::string Name, double Ammount)
+\begin{DoxyCompactList}\small\item\em Function to deposit money in the system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c___bank_a81c4cb16f615542ae2669770428af2f9}{Cash\+Out}} (std\+::string Name, double Ammount)
+\begin{DoxyCompactList}\small\item\em Function to cash out money of the system. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c___bank_a3238dd462f845a2277935b01c25a2e3e}{Check\+Name\+Saved\+In\+System}} (std\+::string Name)
+\begin{DoxyCompactList}\small\item\em Function to check if a name is saved in the system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_c___bank_a2a1039d8e6cca341de951552c39fb025}\label{class_c___bank_a2a1039d8e6cca341de951552c39fb025} 
+static std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c___bank}{C\+\_\+\+Bank}} $>$ {\bfseries get\+Instance\+Bank} ()
+\begin{DoxyCompactList}\small\item\em Function to get the only instance of the class (Singleton way) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_c___bank_adaf2f15a807de414b6b5b336b24f2d9c}\label{class_c___bank_adaf2f15a807de414b6b5b336b24f2d9c} 
+\index{C\_Bank@{C\_Bank}!AddClient@{AddClient}}
+\index{AddClient@{AddClient}!C\_Bank@{C\_Bank}}
+\doxysubsubsection{\texorpdfstring{AddClient()}{AddClient()}}
+{\footnotesize\ttfamily void C\+\_\+\+Bank\+::\+Add\+Client (\begin{DoxyParamCaption}\item[{std\+::string}]{Name,  }\item[{std\+::string}]{Account\+Number,  }\item[{double}]{Balance }\end{DoxyParamCaption})}
+
+
+
+Function to add client to the system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Name} & Client Name \\
+\hline
+{\em Account\+Number} & Client Account Number \\
+\hline
+{\em Balance} & Client Balance \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{class_c___bank_adaf2f15a807de414b6b5b336b24f2d9c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_c___bank_a81c4cb16f615542ae2669770428af2f9}\label{class_c___bank_a81c4cb16f615542ae2669770428af2f9} 
+\index{C\_Bank@{C\_Bank}!CashOut@{CashOut}}
+\index{CashOut@{CashOut}!C\_Bank@{C\_Bank}}
+\doxysubsubsection{\texorpdfstring{CashOut()}{CashOut()}}
+{\footnotesize\ttfamily void C\+\_\+\+Bank\+::\+Cash\+Out (\begin{DoxyParamCaption}\item[{std\+::string}]{Name,  }\item[{double}]{Ammount }\end{DoxyParamCaption})}
+
+
+
+Function to cash out money of the system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Name} & Client Name \\
+\hline
+{\em Ammount} & Ammount to cash out of the system \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{class_c___bank_a81c4cb16f615542ae2669770428af2f9_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_c___bank_a3238dd462f845a2277935b01c25a2e3e}\label{class_c___bank_a3238dd462f845a2277935b01c25a2e3e} 
+\index{C\_Bank@{C\_Bank}!CheckNameSavedInSystem@{CheckNameSavedInSystem}}
+\index{CheckNameSavedInSystem@{CheckNameSavedInSystem}!C\_Bank@{C\_Bank}}
+\doxysubsubsection{\texorpdfstring{CheckNameSavedInSystem()}{CheckNameSavedInSystem()}}
+{\footnotesize\ttfamily bool C\+\_\+\+Bank\+::\+Check\+Name\+Saved\+In\+System (\begin{DoxyParamCaption}\item[{std\+::string}]{Name }\end{DoxyParamCaption})}
+
+
+
+Function to check if a name is saved in the system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Name} & Client Name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True\+: Name exists in the system. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c___bank_a3238dd462f845a2277935b01c25a2e3e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_c___bank_a784802f10d2bd4b2beae8c8c4ad5e686}\label{class_c___bank_a784802f10d2bd4b2beae8c8c4ad5e686} 
+\index{C\_Bank@{C\_Bank}!DepositMoney@{DepositMoney}}
+\index{DepositMoney@{DepositMoney}!C\_Bank@{C\_Bank}}
+\doxysubsubsection{\texorpdfstring{DepositMoney()}{DepositMoney()}}
+{\footnotesize\ttfamily void C\+\_\+\+Bank\+::\+Deposit\+Money (\begin{DoxyParamCaption}\item[{std\+::string}]{Name,  }\item[{double}]{Ammount }\end{DoxyParamCaption})}
+
+
+
+Function to deposit money in the system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Name} & Client Name \\
+\hline
+{\em Ammount} & Ammount to deposit in the system \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{class_c___bank_a784802f10d2bd4b2beae8c8c4ad5e686_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_c___bank_a6c85c177d3bf02d600c7202f01f83285}\label{class_c___bank_a6c85c177d3bf02d600c7202f01f83285} 
+\index{C\_Bank@{C\_Bank}!RequestBalanceByClientName@{RequestBalanceByClientName}}
+\index{RequestBalanceByClientName@{RequestBalanceByClientName}!C\_Bank@{C\_Bank}}
+\doxysubsubsection{\texorpdfstring{RequestBalanceByClientName()}{RequestBalanceByClientName()}}
+{\footnotesize\ttfamily double C\+\_\+\+Bank\+::\+Request\+Balance\+By\+Client\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{Name }\end{DoxyParamCaption})}
+
+
+
+Get the balance of one client. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Name} & Client Name to search \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c___bank_a6c85c177d3bf02d600c7202f01f83285_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_c___bank_a38ae2e527048142d19fe46ee2839c162}\label{class_c___bank_a38ae2e527048142d19fe46ee2839c162} 
+\index{C\_Bank@{C\_Bank}!ShowDataOneClientDataByName@{ShowDataOneClientDataByName}}
+\index{ShowDataOneClientDataByName@{ShowDataOneClientDataByName}!C\_Bank@{C\_Bank}}
+\doxysubsubsection{\texorpdfstring{ShowDataOneClientDataByName()}{ShowDataOneClientDataByName()}}
+{\footnotesize\ttfamily void C\+\_\+\+Bank\+::\+Show\+Data\+One\+Client\+Data\+By\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{Name }\end{DoxyParamCaption})}
+
+
+
+Show all the data of one client of the system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Name} & Client Name to search \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c___bank_a38ae2e527048142d19fe46ee2839c162_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_bank_8h}{Bank.\+h}}\item 
+\mbox{\hyperlink{_bank_8cpp}{Bank.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,11 @@
+<map id="C_API_DB::SetNameDataBaseFile" name="C_API_DB::SetNameDataBaseFile">
+<area shape="rect" id="Node000001" title="Set Name Data Base in string format." alt="" coords="5,80,229,107"/>
+<area shape="rect" id="Node000002" href="$class_c___my_exception.html#ac375a65887ac88e1bb15e3ff4a6db734" title="Level of the exception." alt="" coords="301,5,440,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,77,286,46,287,51,172,82"/>
+<area shape="rect" id="Node000003" href="$class_c___a_p_i___d_b.html#a635878be6e28dd32989f2bbb35ff5fe8" title="Set Name Data Base in std::filesystem::path format." alt="" coords="277,72,464,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="229,91,262,91,262,96,229,96"/>
+<area shape="rect" id="Node000005" href="$class_c___my_exception.html#a648db218063c92ae9f05d2445eb21254" title="Function to print the custom exceptions." alt="" coords="296,139,445,165"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="178,105,296,132,295,137,177,110"/>
+<area shape="rect" id="Node000004" href="$class_c___a_p_i___d_b.html#ace9442fc083ae43bad305f39157bba42" title="Get Name Data Base in string format." alt="" coords="512,80,736,107"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="464,91,497,91,497,96,464,96"/>
+</map>

@@ -1,0 +1,5 @@
+set(FilesLibrary API_DB.cpp)
+add_library(API_DB_Lib ${FilesLibrary})
+target_include_directories(API_DB_Lib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+target_include_directories(API_DB_Lib PUBLIC ${CMAKE_SOURCE_DIR}/LIBS/json/include)
+target_link_libraries(API_DB_Lib PUBLIC BankLib ExceptionsLib nlohmann_json::nlohmann_json)

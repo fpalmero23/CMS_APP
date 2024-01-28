@@ -1,0 +1,47 @@
+\doxysection{Exceptions.\+h}
+\hypertarget{_exceptions_8h_source}{}\label{_exceptions_8h_source}\index{Exceptions.h@{Exceptions.h}}
+\mbox{\hyperlink{_exceptions_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <exception>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <unordered\_map>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c___my_exception}{C\_MyException}}\ :\ \textcolor{keyword}{public}\ std::exception}
+\DoxyCodeLine{00015\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{class_c___my_exception_a91063df542190a8bef2808a341b5e894}{Type}}}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ ErrorOpenDataBaseFile\ =\ 0x01,}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ ErrorInvalidDataBaseName\ =\ 0x02,}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ ErrorParseConfigurationFile\ =\ 0x03,}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ ErrorInvalidClientName\ =\ 0x04,}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ ErrorInvalidClientAccountNumber=\ 0x05,}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ ErrorClientNameAlreadyExists=\ 0x06,}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ ErrorClientAccountAlreadyExists=\ 0x07,}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ ErrorClientNameNotFound\ =\ 0x08}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c___my_exception}{C\_MyException}}(\mbox{\hyperlink{class_c___my_exception_a91063df542190a8bef2808a341b5e894}{Type}}\ type,\ std::string\ details,\ \textcolor{keywordtype}{int}\ level);}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c___my_exception_af0b1ccdfd9640f1da4a1b487cb797929}{\string~C\_MyException}}();}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{class_c___my_exception_a648db218063c92ae9f05d2445eb21254}{what}}();}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_c___my_exception_ac375a65887ac88e1bb15e3ff4a6db734}{get\_level}}();}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ std::string\ m\_msg;}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ std::string\ m\_type;}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ m\_type\_num;}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ m\_level;}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ std::unordered\_map<C\_MyException::Type,\ std::string>\ m\_typeMessageMap\ =}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ C\_MyException::Type::ErrorOpenDataBaseFile,\ \textcolor{stringliteral}{"{}ErrorOpenFile"{}}\ \},}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ C\_MyException::Type::ErrorInvalidDataBaseName,\ \textcolor{stringliteral}{"{}ErrorInvalidDataBaseName"{}}\ \},}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ C\_MyException::Type::ErrorParseConfigurationFile,\ \textcolor{stringliteral}{"{}ErrorParseConfigurationFile"{}}\ \},}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ C\_MyException::Type::ErrorInvalidClientName,\ \textcolor{stringliteral}{"{}ErrorInvalidClientName"{}}\ \},}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ C\_MyException::Type::ErrorInvalidClientAccountNumber,\ \textcolor{stringliteral}{"{}ErrorInvalidClientAccountNumber"{}}\ \},}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ C\_MyException::Type::ErrorClientNameAlreadyExists,\ \textcolor{stringliteral}{"{}ErrorClientNameAlreadyExists"{}}\ \},}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ C\_MyException::Type::ErrorClientAccountAlreadyExists,\ \textcolor{stringliteral}{"{}ErrorClientAccountAlreadyExists"{}}\ \},}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ C\_MyException::Type::ErrorClientNameNotFound,\ \textcolor{stringliteral}{"{}ErrorClientNameNotFound"{}}\ \},}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00064\ \};}
+
+\end{DoxyCode}
